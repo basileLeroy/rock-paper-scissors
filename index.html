@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    
+    <form action="#" id="rps-game">
+
+        <div class="pc-choice">
+            <img src="assets/rock.png" alt="" title="rock" id="pc-rock">
+            <img src="assets/paper.png" alt="" title="paper" id="pc-paper">
+            <img src="assets/scissors.png" alt="" title="scissors" id="pc-scissors">
+        </div>
+
+        <div class="choices">
+            <p>Select your choice!</p>
+            <button id="playerChoice">Rock</button>
+            <button id="playerChoice">Paper</button>
+            <button id="playerChoice">Scissors</button>
+        </div>
+
+        <div class="action">
+            <button id="action" onclick="rockpaperscissors('action')">Play !</button>
+        </div>
+
+    </form>
+
+</body>
+<script src="script.js"></script>
+</html>
