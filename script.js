@@ -46,9 +46,9 @@
          if (computerPick == 'scissors') {
             result = "You Won!";
          }
-         console.log(playerPick);
-         console.log(computerPick);
-         console.log(result); 
+         //console.log(playerPick);
+         //console.log(computerPick);
+         //console.log(result); 
       };
    
       if (playerPick === 'paper') {
@@ -61,9 +61,9 @@
          if (computerPick == 'scissors') {
             result = "You Lost!";
          }
-         console.log(playerPick);
-         console.log(computerPick);
-         console.log(result); 
+         //console.log(playerPick);
+         //console.log(computerPick);
+         //console.log(result); 
       };
    
       if (playerPick === 'scissors') {
@@ -76,9 +76,9 @@
          if (computerPick == 'scissors') {
             result = "DRAW!";
          }
-         console.log(playerPick);
-         console.log(computerPick);
-         console.log(result);
+         //console.log(playerPick);
+         //console.log(computerPick);
+         //console.log(result);
          
       };
       
@@ -94,8 +94,9 @@
 
 
 
-// --------------------------------------------------------------------------------------------------------------------------------------------
-// --------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------    ISMI    --------------------------------------------------------------- 
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 /*
    // option for computer
