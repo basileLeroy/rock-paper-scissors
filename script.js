@@ -1,18 +1,50 @@
 (function() {
+   const randomSelector = Math.floor(Math.random() * 3);       // Those const/let variables have to be outside of the function.
+   const options = ['rock', 'paper', 'scissors'];
+   
 
-    document.getElementById("rps-game");
+   const pRock = document.querySelector('.rock');              // querySelector() enables you to select all types of documents (classes, id's, etx ...) / works like css syntax
+   const pPaper = document.querySelector('.paper');
+   const pScissors = document.querySelector('.scissors');
 
-    const pcResult = Math.floor(Math.random() * 3);
-    const pcPlay = ["rock", "paper", "scissors"];
-    const playerChoice = document.getElementById("playerChoice");
+   const play = document.querySelector('.play');
 
-
+   let playerPick = "";                                        // empty, to be able to fill in later with the player's choice
 
    
-        
-   console.log(playerChoice);
+   
 
-    
+   pRock.addEventListener("click", function() {                // Adding a button listener for each option (rock paper scissors) setting a variable for playerPick according to the choice
+      let playerPick = 'rock';                                 // Adding the computerPick as const in each button
+      const computerPick = options[randomSelector];
+
+      
+      console.log(playerPick);
+      console.log(computerPick);
+   })
+
+   pPaper.addEventListener("click", function() {
+      let playerPick = 'paper';
+      const computerPick = options[randomSelector];
+
+      
+      console.log(playerPick);
+      console.log(computerPick);
+   })
+
+   pScissors.addEventListener("click", function() {
+      let playerPick = 'scissors';
+      const computerPick = options[randomSelector];
+
+      
+      console.log(playerPick);
+      console.log(computerPick);
+   })
+
+   play.addEventListener("click", function() {
+      
+   })
+   
 })();
 
 
@@ -21,6 +53,7 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
+/*
    // option for computer
    function getOptionComputer (){
     const comp = Math.random();
@@ -101,3 +134,4 @@ function  getResult(comp, player){
 }) 
    
 // for 3 button i choose to make it one by one 
+*/

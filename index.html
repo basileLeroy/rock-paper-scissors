@@ -12,21 +12,27 @@
     
     <form action="#" id="rps-game">
 
-        <div class="pc-choice">
-            <img src="assets/rock.png" alt="" title="rock" id="pc-rock">
-            <img src="assets/paper.png" alt="" title="paper" id="pc-paper">
-            <img src="assets/scissors.png" alt="" title="scissors" id="pc-scissors">
+        <div class="pc-choice" id="pc-choice">
+            <p class="move">text</p>
         </div>
 
         <div class="choices">
             <p>Select your choice!</p>
-            <button id="playerChoice">Rock</button>
-            <button id="playerChoice">Paper</button>
-            <button id="playerChoice">Scissors</button>
+            <div class="card">
+                <button value="rock" class="rock playerChoice" id="rock">Rock</button>
+            </div>
+
+            <div class="card">
+                <button value="paper" class="paper playerChoice" id="paper">Paper</button>
+            </div>
+
+            <div class="card">
+                <button value="scissors" class="scissors playerChoice" id="scissors">Scissors</button>
+            </div>
         </div>
 
         <div class="action">
-            <button id="action" onclick="rockpaperscissors('action')">Play !</button>
+            <button class="play" id="action">Play !</button>
         </div>
 
     </form>
