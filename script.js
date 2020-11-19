@@ -35,8 +35,9 @@
       let randomSelector = Math.floor(Math.random() * 3);  
       const computerPick = options[randomSelector];
       
-
+      // === because the variable is exactly the same
       if (playerPick === 'rock') {
+         // == because the value is the same but not the the exact same variable
          if (computerPick == 'paper') {
             result = "You Lost!";
          }
