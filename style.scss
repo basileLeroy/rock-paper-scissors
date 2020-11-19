@@ -1,0 +1,37 @@
+form {
+    display: flex;
+    flex-direction: column;
+    
+    .pc-choice {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin: auto;
+        text-align: center;
+        
+    }
+
+    .rightwrong {
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+
+        width: 200px;
+        height: auto;
+        margin: auto;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .choices {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .action {
+        margin-top: 50px;
+        text-align: center;;
+    }
+}

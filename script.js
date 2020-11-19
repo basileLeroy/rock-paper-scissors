@@ -1,52 +1,96 @@
 (function() {
-   const randomSelector = Math.floor(Math.random() * 3);       // Those const/let variables have to be outside of the function.
+   // Those const/let variables have to be outside of the function.
+     
    const options = ['rock', 'paper', 'scissors'];
    
-
-   const pRock = document.querySelector('.rock');              // querySelector() enables you to select all types of documents (classes, id's, etx ...) / works like css syntax
+   // querySelector() enables you to select all types of documents (classes, id's, etx ...) / works like css syntax
+   const pRock = document.querySelector('.rock');              
    const pPaper = document.querySelector('.paper');
    const pScissors = document.querySelector('.scissors');
 
    const play = document.querySelector('.play');
 
-   let playerPick = "";                                        // empty, to be able to fill in later with the player's choice
-
+   // empty, to be able to fill in later with the player's choice
+   let playerPick = "";                                        
+   let result = "";
    
    
-
-   pRock.addEventListener("click", function() {                // Adding a button listener for each option (rock paper scissors) setting a variable for playerPick according to the choice
-      let playerPick = 'rock';                                 // Adding the computerPick as const in each button
-      const computerPick = options[randomSelector];
-
-      
-      console.log(playerPick);
-      console.log(computerPick);
+   
+   // Adding a button listener for each option (rock paper scissors) setting a variable for playerPick according to the choice
+   // Adding the computerPick as const in each button
+   pRock.addEventListener("click", function() {                
+      playerPick = 'rock';
    })
 
    pPaper.addEventListener("click", function() {
-      let playerPick = 'paper';
-      const computerPick = options[randomSelector];
-
-      
-      console.log(playerPick);
-      console.log(computerPick);
+      playerPick = 'paper';
    })
 
    pScissors.addEventListener("click", function() {
-      let playerPick = 'scissors';
-      const computerPick = options[randomSelector];
-
-      
-      console.log(playerPick);
-      console.log(computerPick);
+      playerPick = 'scissors';
    })
 
+
    play.addEventListener("click", function() {
+      let randomSelector = Math.floor(Math.random() * 3);  
+      const computerPick = options[randomSelector];
+      
+
+      if (playerPick === 'rock') {
+         if (computerPick == 'paper') {
+            result = "You Lost!";
+         }
+         if (computerPick == 'rock') {
+            result = "DRAW!";
+         }
+         if (computerPick == 'scissors') {
+            result = "You Won!";
+         }
+         console.log(playerPick);
+         console.log(computerPick);
+         console.log(result); 
+      };
+   
+      if (playerPick === 'paper') {
+         if (computerPick == 'paper') {
+            result = "DRAW!";
+         }
+         if (computerPick == 'rock') {
+            result = "You Won!";
+         }
+         if (computerPick == 'scissors') {
+            result = "You Lost!";
+         }
+         console.log(playerPick);
+         console.log(computerPick);
+         console.log(result); 
+      };
+   
+      if (playerPick === 'scissors') {
+         if (computerPick == 'paper') {
+            result = "You Won!";
+         }
+         if (computerPick == 'rock') {
+            result = "You Lost!";
+         }
+         if (computerPick == 'scissors') {
+            result = "DRAW!";
+         }
+         console.log(playerPick);
+         console.log(computerPick);
+         console.log(result);
+         
+      };
+      
+      document.querySelector('.answer').innerHTML = computerPick,
+      document.querySelector('.result').innerHTML = result;
       
    })
    
-})();
+   
 
+   
+})();
 
 
 
