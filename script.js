@@ -10,6 +10,8 @@
 
    const play = document.querySelector('.play');
 
+   const Reload = document.querySelector('.rld-page');
+
    // Adding minimum score (=1)
    let pcNum = 1;
    let playerNum = 1;
@@ -39,10 +41,16 @@
       playerPick = 'scissors';
    })
 
+   Reload.addEventListener("click", function() {
+      location.reload();
+      return false;
+
+   })
 
    play.addEventListener("click", function() {
       let randomSelector = Math.floor(Math.random() * 3);  
       const computerPick = options[randomSelector];
+      
       
       // === because the variable is exactly the same
       if (playerPick === 'rock') {
@@ -94,7 +102,7 @@
 
 
       
-      document.querySelector('.answer').innerHTML = computerPick;
+      document.querySelector('.answer').setAttribute ('src', 'assets/' + computerPick + '.png');
       document.querySelector('.result').innerHTML = result;
 
 
