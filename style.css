@@ -127,4 +127,9 @@ body form .action {
   margin-top: 50px;
   text-align: center;
 }
+
+body form .reload {
+  text-align: center;
+  margin-top: 150px;
+}
 /*# sourceMappingURL=style.css.map */
