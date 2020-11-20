@@ -9,8 +9,7 @@
    const pScissors = document.querySelector('.scissors');
 
    const play = document.querySelector('.play');
-
-   const Reload = document.querySelector('.rld-page');
+   const reload = document.querySelector('.rld-page');
 
    // Adding minimum score (=1)
    let pcNum = 1;
@@ -25,7 +24,7 @@
    let playerScoreboard = "";
 
    
-   
+
    
    // Adding a button listener for each option (rock paper scissors) setting a variable for playerPick according to the choice
    // Adding the computerPick as const in each button
@@ -41,11 +40,7 @@
       playerPick = 'scissors';
    })
 
-   Reload.addEventListener("click", function() {
-      location.reload();
-      return false;
 
-   })
 
    play.addEventListener("click", function() {
       let randomSelector = Math.floor(Math.random() * 3);  
@@ -117,9 +112,13 @@
       document.querySelector('.playerScore').innerHTML = playerScoreboard;
       document.querySelector('.computerScore').innerHTML = pcScoreboard;
       
-   })
+   });
    
-   
+   reload.addEventListener('click', function() {
+         location.reload();
+         
+      
+   });
 
    
 })();
