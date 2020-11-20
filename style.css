@@ -96,14 +96,14 @@ body form .playerChoice {
 }
 
 body form .pc-choice {
-  width: 100px;
+  width: 150px;
   height: auto;
   background-color: aqua;
   margin: auto;
   text-align: center;
   border-radius: 20%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 body form .pc-choice img {
