@@ -148,8 +148,22 @@ body form .action {
   text-align: center;
 }
 
-body form .reload {
+body .reload {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body .reload .playerChoice {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #fffb07;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

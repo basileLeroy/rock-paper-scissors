@@ -9,7 +9,7 @@
    const pScissors = document.querySelector('.scissors');
 
    const play = document.querySelector('.play');
-   const reload = document.querySelector('.rld-page');
+   const reload = document.querySelector('.rld_page');
 
    // Adding minimum score (=1)
    let pcNum = 1;
@@ -95,7 +95,6 @@
          
       };
 
-
       
       document.querySelector('.answer').setAttribute ('src', 'assets/' + computerPick + '.png');
       document.querySelector('.result').innerHTML = result;
@@ -114,11 +113,15 @@
       
    });
    
-   reload.addEventListener('click', function() {
-         location.reload();
-         
-      
-   });
+
+
+
 
    
 })();
+
+document.querySelector('.rld_page').addEventListener('click', function() {
+   window.location.reload();
+   console.log("hello");
+
+});
